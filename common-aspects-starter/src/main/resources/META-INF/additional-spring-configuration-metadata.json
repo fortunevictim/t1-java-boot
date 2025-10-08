@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "t1.logging.topic",
+      "type": "java.lang.String",
+      "description": "Kafka topic used by aspects to publish log events (HTTP, errors, metrics).",
+      "defaultValue": "service_logs"
+    },
+    {
+      "name": "t1.metrics.threshold.ms",
+      "type": "java.lang.Long",
+      "description": "Execution time threshold in milliseconds for the @Metric aspect to emit a warning.",
+      "defaultValue": 500
+    },
+    {
+      "name": "t1.cache.ttl.ms",
+      "type": "java.lang.Long",
+      "description": "Time-to-live in milliseconds for entries cached by the @Cached aspect.",
+      "defaultValue": 60000
+    }
+  ]
+}
+
+
